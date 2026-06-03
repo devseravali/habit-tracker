@@ -2,4 +2,156 @@ body {
     background-color: var(--background);
     color: var(--on-background);
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.sidebar {
+    background-color: var(--surface);
+    color: var(--on-surface);
+    margin: 0;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.brand-sub {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--on-surface-variant);
+    text-align: center;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    text-decoration: none;
+}
+
+.nav-list li {
+    margin-bottom: 0.25rem;
+}
+
+.nav-list a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 0.8rem;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.nav-list a:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.app-shell {
+    flex: 1 1 auto;
+    margin: 0;
+}
+
+.layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 24px;
+}
+
+.active {
+    background-color: var(--primary-container);
+    color: var(--on-primary-container);
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.material-symbols-outlined {
+    font-size: 1.2rem;
+    font-weight: 500;
+    vertical-align: middle;
+    color: var(--on-surface-variant);
+    text-decoration: none;
+}
+
+.sidebar-footer {
+    margin: 2rem 0 0;
+    padding: 1rem;
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+    color: var(--on-surface-variant);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: stretch;
+}
+
+.sidebar-footer a {
+    color: var(--on-surface-variant);
+    text-decoration: none;
+}
+
+.sidebar-footer a:hover {
+    text-decoration: underline;
+}
+
+.sidebar-footer #support-link {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    padding: 0.25rem 0;
+    color: var(--on-surface-variant);
+}
+
+.danger,
+.upgrade {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-clip: padding-box;
+}
+
+.danger {
+    background-color: var(--error-container);
+    color: var(--on-error-container);
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+}
+
+.upgrade {
+    background-color: var(--primary-container);
+    color: var(--on-primary-container);
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+}
+
+.upgrade .material-symbols-outlined {
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    padding: 0.2rem;
+    color: var(--primary);
+    background-color: var(--primary-container);
 }
