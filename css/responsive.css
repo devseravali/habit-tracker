@@ -3,9 +3,6 @@
         flex-direction: column;
         align-items: stretch;
         padding: 1rem;
-    }
-
-    .sidebar {
         width: 100%;
         height: auto;
     }
@@ -98,5 +95,212 @@
     .habits-list li {
         flex-direction: column;
         align-items: stretch;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .menu-toggle {
+        padding: 0.4rem;
+        margin: 1rem 0 0.5rem;
+        background-color: var(--text-color);
+        border: none;
+        color: var(--text-color)
+    }
+
+    .app-shell {
+        padding: 1rem;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .app-header {
+        gap: 0.75rem;
+        align-items: flex-start;
+    }
+
+    .header-left {
+        gap: 0.5rem;
+        min-width: 0;
+    }
+
+    .header-actions {
+        gap: 0.35rem;
+        flex-shrink: 0;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #page-title {
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+    .main-content {
+        gap: 0.85rem;
+    }
+
+    .hero {
+        padding: 1.25rem 1rem;
+        text-align: left;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+        line-height: 1.15;
+    }
+
+    .hero-tags {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        padding: 0.75rem 0 0;
+    }
+
+    .hero-stats {
+        justify-content: flex-start;
+        margin-top: 0.75rem;
+    }
+
+    .streak {
+        align-items: flex-start;
+    }
+
+    .layout-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .habits-column {
+        padding: 0;
+        gap: 0.75rem;
+        align-items: stretch;
+    }
+
+    .add-habit {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.85rem;
+        gap: 0.75rem;
+    }
+
+    .add-habit input[type="text"],
+    .add-habit .btn {
+        width: 100%;
+    }
+
+    .progress-area {
+        gap: 0.35rem;
+    }
+
+    .progress-text {
+        text-align: left;
+    }
+
+    .habits-area {
+        gap: 1rem;
+    }
+
+    .habits-list {
+        gap: 0.75rem;
+    }
+
+    .habits-list li {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 0.9rem;
+    }
+
+    .stat-value {
+        font-size: 1.4rem;
+    }
+
+    .mini-chart .chart {
+        height: 96px;
+        gap: 6px;
+    }
+
+    .mini-chart .bar {
+        width: 14px;
+    }
+
+    .chart-labels {
+        font-size: 0.7rem;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+
+    .material-symbols-outlined {
+        font-size: 1.35rem;
+    }
+
+    .glass-card {
+        padding: 0.9rem;
+    }
+}
+
+@media (max-width: 411px) {
+
+    .menu-toggle {
+        padding: 0.4rem;
+        margin: 1rem 0 0.5rem;
+        background-color: var(--text-color);
+        border: none;
+        color: var(--text-color)
+    }
+
+    .app-shell {
+        padding: 0.75rem;
+    }
+
+    .hero {
+        padding: 1rem 0.85rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.35rem;
+    }
+
+    .tag {
+        font-size: 0.78rem;
+        padding: 0.3rem 0.7rem;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .nav-list li {
+        width: 100%;
+    }
+
+    .nav-list li a {
+        width: 100%;
+        justify-content: center;
     }
 }
