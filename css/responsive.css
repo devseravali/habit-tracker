@@ -1,0 +1,102 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sidebar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar a {
+        flex: 1 1 100%;
+        text-align: left;
+    }
+
+    .brand {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .brand-sub {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-list li {
+        margin: 0;
+        width: 100%;
+    }
+
+    .nav-list li a {
+        font-size: 0.9rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .app-shell {
+        padding: 1rem;
+    }
+
+    .layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .material-symbols-outlined {
+        font-size: 1.5rem;
+    }
+
+    .streak {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 1.25rem 1rem;
+    }
+
+    .hero-stats {
+        gap: 1rem;
+    }
+
+    .hero-tags {
+        gap: 0.4rem;
+    }
+
+    .habits-column {
+        display: flex;
+        gap: 0.75rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mini-chart .chart {
+        height: 100px;
+        gap: 6px;
+    }
+
+    .progress-bar {
+        width: 100%;
+    }
+
+    .progress-area {
+        gap: 0.4rem;
+    }
+
+    .habits-list li {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
