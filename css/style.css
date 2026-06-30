@@ -356,22 +356,32 @@ button:focus {
 progress.progress-bar {
     -webkit-appearance: none;
     appearance: none;
+    display: block;
     width: 100%;
-    height: 12px;
+    height: 100%;
     border: none;
     background: transparent;
+    border-radius: inherit;
+    overflow: hidden;
+    accent-color: var(--primary-container);
 }
 
 progress.progress-bar::-webkit-progress-bar {
-    background: transparent;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--surface-container-high) 86%, transparent), color-mix(in srgb, var(--surface-container-low) 92%, transparent));
 }
 
 progress.progress-bar::-webkit-progress-value {
-    background: var(--primary-container);
+    background: linear-gradient(90deg, var(--primary-container) 0%, var(--primary) 100%);
+    border-radius: inherit;
+    box-shadow: 0 0 16px color-mix(in srgb, var(--primary-container) 34%, transparent);
+    transition: width 220ms ease;
 }
 
 progress.progress-bar::-moz-progress-bar {
-    background: var(--primary-container);
+    background: linear-gradient(90deg, var(--primary-container) 0%, var(--primary) 100%);
+    border-radius: inherit;
+    box-shadow: 0 0 16px color-mix(in srgb, var(--primary-container) 34%, transparent);
+    transition: width 220ms ease;
 }
 
 .habits-list li {
@@ -433,24 +443,30 @@ progress.progress-bar::-moz-progress-bar {
 }
 
 .progress-bar-wrapper {
-    background-color: var(--outline-variant);
-    border-radius: 10px;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--surface-container-high) 88%, transparent), color-mix(in srgb, var(--surface-container-low) 96%, transparent));
+    border: 1px solid color-mix(in srgb, var(--outline-variant) 70%, transparent);
+    border-radius: 999px;
+    padding: 3px;
     width: 100%;
-    height: 14px;
+    height: 18px;
+    box-sizing: border-box;
+    box-shadow: inset 0 1px 0 color-mix(in srgb, var(--surface-bright) 30%, transparent);
 }
 
 .progress-bar {
-    background-color: var(--primary-container);
-    border-radius: 10px;
+    background: transparent;
+    border-radius: 999px;
     overflow: hidden;
     width: 100%;
-    height: 14px;
+    height: 100%;
 }
 
 .progress-text {
     font-size: 0.8rem;
     color: var(--on-surface-variant);
     text-align: right;
+    font-weight: 500;
+    letter-spacing: 0.01em;
 }
 
 .habits-area {
