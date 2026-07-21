@@ -1,6 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import { PaginaInicial } from './components/pagina-inicial/paginaInicial';
-
+import { PaginaInicial } from './components/PaginaInicial/PaginaInicial';
+import { Habitos } from './components/Habitos/Habitos';
 function App() {
   return (
     <BrowserRouter>
@@ -11,7 +11,7 @@ function App() {
         />
         <Route
           path="/habitos"
-          element={<PaginaInicial pageTitle="Meus Hábitos" />}
+          element={<Habitos />}
         />
         <Route
           path="/estatisticas"
