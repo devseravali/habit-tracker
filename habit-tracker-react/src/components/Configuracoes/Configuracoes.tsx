@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const Configuracoes: React.FC = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="configuracoes">
             <h1>Configurações</h1>
@@ -25,7 +28,7 @@ export const Configuracoes: React.FC = () => {
                 <label htmlFor="notificacoes">Ativar notificações</label>
             </div>
 
-            <button onClick={() => (window.location.href = '../index.html')}>Voltar ao início</button>
+            <button onClick={() => navigate('/overview')}>Voltar ao início</button>
         </div>
     );
 };

@@ -2,6 +2,8 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { PaginaInicial } from './components/PaginaInicial/PaginaInicial';
 import { Habitos } from './components/Habitos/Habitos';
 import { Configuracoes } from './components/Configuracoes/Configuracoes';
+import { Estastisticas } from './components/Estastiticas/Estastiticas';
+import { MetasSemanais } from './components/MetasSemanais/MetasSemanais';
 function App() {
   return (
     <BrowserRouter>
@@ -14,14 +16,8 @@ function App() {
           path="/habitos"
           element={<Habitos />}
         />
-        <Route
-          path="/estatisticas"
-          element={<PaginaInicial pageTitle="Estatísticas" />}
-        />
-        <Route
-          path="/metas-semanais"
-          element={<PaginaInicial pageTitle="Metas Semanais" />}
-        />
+        <Route path="/estatisticas" element={<Estastisticas />} />
+        <Route path="/metas-semanais" element={<MetasSemanais />} />
         <Route
           path="/configuracoes"
           element={<Configuracoes />}

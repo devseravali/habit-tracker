@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const MetasSemanais: React.FC = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="metas-semanais">
             <h1>Metas Semanais</h1>
@@ -23,7 +26,7 @@ export const MetasSemanais: React.FC = () => {
                 </li>
             </ul>
 
-            <button onClick={() => (window.location.href = '../index.html')}>Voltar ao início</button>
+            <button onClick={() => navigate('/overview')}>Voltar ao início</button>
         </div>
     );
 };
