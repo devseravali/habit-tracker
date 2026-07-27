@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { PaginaInicial } from './components/PaginaInicial/PaginaInicial';
 import { Habitos } from './components/Habitos/Habitos';
+import { Configuracoes } from './components/Configuracoes/Configuracoes';
 function App() {
   return (
     <BrowserRouter>
@@ -23,7 +24,7 @@ function App() {
         />
         <Route
           path="/configuracoes"
-          element={<PaginaInicial pageTitle="Configurações" />}
+          element={<Configuracoes />}
         />
         <Route path="/" element={<Navigate to="/overview" replace />} />
         <Route path="*" element={<Navigate to="/overview" replace />} />
