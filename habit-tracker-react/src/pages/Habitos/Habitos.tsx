@@ -1,11 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Header } from "../../components/Header/Header";
+import { Footer } from "../../components/Footer/Footer";
 
 export const Habitos: React.FC = () => {
     const navigate = useNavigate();
     return (
         <> 
-            <h1>Meus Hábitos</h1>
+                <Header />
+                <h1>Meus Hábitos</h1>
 
             <ul>
                 <li>
@@ -29,6 +32,7 @@ export const Habitos: React.FC = () => {
             </ul>
 
             <button type="button" onClick={() => navigate('/overview')}>Voltar ao início</button>
+            <Footer />
         </>
     );
 };

@@ -1,4 +1,5 @@
-import { NavLink } from 'react-router-dom';
+import { Header } from '../../components/Header/Header';
+import { Footer } from '../../components/Footer/Footer';
 
 interface PaginaInicialProps {
   pageTitle: string;
@@ -7,38 +8,9 @@ interface PaginaInicialProps {
 export const PaginaInicial = ({ pageTitle }: PaginaInicialProps) => {
   return (
     <>
-      <nav>
-        <div>
-          <h2>Habit Tracker</h2>
-          <p>Protocol: Habit-Track-v1</p>
-        </div>
-
-        <ul>
-          <li>
-            <NavLink to="/habitos">Hábitos</NavLink>
-          </li>
-          <li>
-            <NavLink to="/estatisticas">Estatísticas</NavLink>
-          </li>
-          <li>
-            <NavLink to="/configuracoes">Configurações</NavLink>
-          </li>
-        </ul>
-
-        <div>
-          <button>Upgrade</button>
-
-          <a href="#">
-            <button>Suporte</button>
-          </a>
-
-          <a href="#">
-            <button>Sair</button>
-          </a>
-        </div>
-      </nav>
-
+      <Header />
       <div>
+        
         <header>
           <div>
             <button>☰</button>
@@ -138,6 +110,7 @@ export const PaginaInicial = ({ pageTitle }: PaginaInicialProps) => {
           </div>
         </main>
       </div>
+      <Footer />
     </>
   );
 };
