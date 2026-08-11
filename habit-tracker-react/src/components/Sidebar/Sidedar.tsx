@@ -1,5 +1,3 @@
-import { Header } from '../Header/Header';
-
 export const Sidebar: React.FC = () => {
     return (
         <>
@@ -7,7 +5,6 @@ export const Sidebar: React.FC = () => {
             <div className="brand">Habit Tracker</div>
             <div className="brand-sub">Protocol: Habit-Track-v1</div>
 
-               <Header />
 
             <div className="sidebar-footer">
                 <button className="upgrade" id="upgrade-btn">
