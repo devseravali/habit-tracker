@@ -1,48 +1,24 @@
 import { Header } from '../../components/Header/Header';
 import { Footer } from '../../components/Footer/Footer';
 import { Card } from '../../components/Card/Card';
+import { PageHeader } from '../../components/PageHeader/PageHeader';
+import { HeroSection } from '../../components/HeroSection/HeroSection';
 
 interface PaginaInicialProps {
-  pageTitle: string;
+  pageTitle?: string;
 }
 
-export const PaginaInicial = ({ pageTitle }: PaginaInicialProps) => {
+export const PaginaInicial = ({ pageTitle = 'Página Inicial' }: PaginaInicialProps) => {
   return (
     <>
       <Header />
       <div>
-        
-        <header>
-          <div>
-            <button>☰</button>
-
-            <div>
-              <h1>{pageTitle}</h1>
-              <p>Bem-vindo ao Habit Tracker</p>
-            </div>
-          </div>
-
-          <div>
-            <button>
-              <span>Alternar tema</span>
-            </button>
-
-            <button>
-              <span>Notificações</span>
-            </button>
-          </div>
-        </header>
+        <PageHeader pageTitle={pageTitle} />
 
         <main>
-          <section>
-            <div>
-              <h2>Construa sua rotina</h2>
+          <HeroSection />
 
-              <p>
-                Adicione hábitos, acompanhe seu progresso e alcance seus
-                objetivos!
-              </p>
-            </div>
+          <section>
             <Card />
           </section>
         </main>
