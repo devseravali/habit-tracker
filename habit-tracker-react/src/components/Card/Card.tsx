@@ -1,12 +1,5 @@
 import React from 'react';
-
-interface CardProps {
-    title?: string;
-    subtitle?: string;
-    className?: string;
-    actions?: React.ReactNode;
-    children?: React.ReactNode;
-}
+import type { CardProps } from '../../types/CardProps';
 
 export const Card: React.FC<CardProps> = ({ title, subtitle, className, actions, children }) => {
     const classes = ['glass-card'];

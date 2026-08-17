@@ -1,9 +1,4 @@
-interface ButtonProps {
-  children?: React.ReactNode;
-  onClick?: () => void;
-  className?: string;
-  type?: 'button' | 'submit' | 'reset';
-}
+import { type ButtonProps } from "../../types/ButtonProps";
 
 export const Button = ({ children, onClick, className, type = 'button' }: ButtonProps) => {
     const classes = ['glass-button'];
