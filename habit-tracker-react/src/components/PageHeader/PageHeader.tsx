@@ -1,8 +1,5 @@
 import React from 'react';
-
-interface PageHeaderProps {
-  pageTitle: string;
-}
+import type { PageHeaderProps } from '../../types/PageHeaderProps';
 
 export const PageHeader: React.FC<PageHeaderProps> = ({ pageTitle }) => {
   return (

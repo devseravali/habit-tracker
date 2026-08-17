@@ -1,9 +1,5 @@
 import React from 'react';
-
-interface HeroSectionProps {
-  title?: string;
-  subtitle?: string;
-}
+import type { HeroSectionProps } from '../../types/HeroSectionProps';
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ title = 'Construa sua rotina', subtitle }) => {
   return (
